@@ -6,8 +6,11 @@ import {
   gql,
 } from "@apollo/client";
 
+import { config } from "dotenv";
+config();
+
 const client = new ApolloClient({
-  uri: "https://48p1r2roz4.sse.codesandbox.io",
+  uri: process.env.GOTCHIVERSE_SUBGRAPH,
   cache: new InMemoryCache(),
 });
 
@@ -23,58 +26,34 @@ const alchemicaMinted = async () => {
   });
 };
 
-const alchemicaSpentOnUpgrades = async() => {
+const alchemicaSpentOnUpgrades = async () => {};
 
-}
+const alchemicaSpentOnTiles = async () => {};
 
-const alchemicaSpentOnTiles = async () => {
+const alchemicaSpentOnInstallations = async () => {};
 
-}
+const tilesMinted = async () => {};
 
-const alchemicaSpentOnInstallations = async () => {
+const installationsMinted = async () => {};
 
-}
-
-const tilesMinted = async () => {
-
-}
-
-const installationsMinted = async () => {
-
-}
-
-const upgradesInitiated = async () => {
-
-}
+const upgradesInitiated = async () => {};
 
 /**
- * 
- * @param {number} interval # in days 
- */
-const numberOfChannels = async (interval) => {
-
-}
-
-const gltrSpentOnUpgrades = async () => {
-
-}
-
-/**
- * 
+ *
  * @param {number} interval # in days
  */
-const activeWallets = async (interval) => {
+const numberOfChannels = async (interval) => {};
 
-}
+const gltrSpentOnUpgrades = async () => {};
 
-const numberOfPlayersBanned = async () => {
+/**
+ *
+ * @param {number} interval # in days
+ */
+const activeWallets = async (interval) => {};
 
-}
+const numberOfPlayersBanned = async () => {};
 
-const amountOfAlchemicaSoldByBannedPlayers = async () => {
-  
-}
+const amountOfAlchemicaSoldByBannedPlayers = async () => {};
 
-const numberOfPlayersUnbanned = async () => {
-
-}
+const numberOfPlayersUnbanned = async () => {};
