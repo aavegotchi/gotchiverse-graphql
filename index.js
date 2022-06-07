@@ -57,3 +57,17 @@ const numberOfPlayersBanned = async () => {};
 const amountOfAlchemicaSoldByBannedPlayers = async () => {};
 
 const numberOfPlayersUnbanned = async () => {};
+
+const gltrStakers = async () => {};
+
+const lpStakedInPercentage = async () => {};
+
+const numberOfGotchisSummoned = async () => {};
+
+const numberOfGotchisSacrificed = async () => {};
+
+/**
+ *
+ * @param {number} interval # in days
+ */
+const numberOfGotchisChanneled = async (interval) => {};
